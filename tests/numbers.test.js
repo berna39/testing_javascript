@@ -16,3 +16,6 @@ test('test on numbers <= than', () => {
     expect(someNumber).toBeLessThanOrEqual(50);
 });
 
+test('test on floating number', () => {
+    expect(someNumber + 0.3).toBeCloseTo(39.3);
+});
