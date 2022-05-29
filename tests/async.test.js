@@ -5,3 +5,8 @@ test('Testing asynchronous stuffs', () => {
         expect(data).toBe('Meal cooked');
     });
 });
+
+test('Testing asynchronous stuffs with await', async() => {
+    const data = await anAsyncFunction();
+    expect(data).toBe('Meal cooked');
+});
