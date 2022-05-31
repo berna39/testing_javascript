@@ -1,9 +1,7 @@
-import axios from 'axios'
+const axios = require('axios');
 
-class User{
-    static all(){
-        axios.get('to-some-api/users').then(resp => resp.data);
-    }
+function  allUsers(){
+    return axios.get('/users.json').then(resp => resp.data);
 }
 
-module.exports = User;
+module.exports = allUsers;
