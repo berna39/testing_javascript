@@ -16,11 +16,15 @@ afterAll(() => {
     console.log('After all tests'); //after all tests
 });
 
-test('Make sure that foo returns something', () => {
-    expect(foo()).toBe('I believe in God');
+describe('The group of tests', () => {
+
+    test('Make sure that foo returns something', () => {
+        expect(foo()).toBe('I believe in God');
+    });
+    
+    test('Make sure that rand return a correct value', () => {
+        expect(rand()).toBeLessThan(10);
+    });
 });
 
-test('Make sure that rand return a correct value', () => {
-    expect(rand()).toBeLessThan(10);
-});
 
